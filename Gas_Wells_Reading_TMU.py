@@ -7,3 +7,4 @@ import datetime
 #File="Client_EPIS_Daily_Progress.xlsx"
 im = Image.open("KPC.jpg")
 image = np.array(im)
+st.image('image')
