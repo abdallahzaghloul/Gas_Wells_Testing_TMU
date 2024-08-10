@@ -25,15 +25,12 @@ st.markdown(" <center>  <h1> Well Current Parameters </h1> </font> </center> </h
 
 CK = st.slider("C.K %", 0.00,100.00)
 
+WHP = st.slider("WHP Psi", 300.0,5000.0)
+
 Gas_Rate = st.text_input("Gas Rate (MMSCF/Day)")
 Condensate = st.text_input("Condensate (BPD)")
 Water = st.text_input("Water (BPD)")
 
 
-
-
-
-
-  
 
 
