@@ -58,8 +58,8 @@ st.dataframe(Data)
 
 
 if st.button('Save'):
-            with pd.excelwriter('Gas_Wells_Readings.xlsx', engine='openpyxl', mode='a') as writer:
-            new_df.to_excel(writer, sheet_name='Sheet1', index=False, header=None)
+ with pd.excelwriter('Gas_Wells_Readings.xlsx', engine='openpyxl', mode='a') as writer:
+  new_df.to_excel(writer, sheet_name='Sheet1', index=False, header=None)
 
 
 
