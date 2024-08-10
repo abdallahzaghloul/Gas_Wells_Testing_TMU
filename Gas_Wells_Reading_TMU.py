@@ -7,4 +7,4 @@ import datetime
 im = Image.open("KPC.jpg")
 #image = np.array(im)
 #st.image("image")
-st.image("im")
+st.image('im')
