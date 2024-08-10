@@ -54,4 +54,6 @@ st.button('Save')
 
 
 dict_ = {'Well_Name': Well_Name, 'C.K %': CK, 'API': API}
+
+st.dataframe(dict_)
 pd.DataFrame([dict_])
