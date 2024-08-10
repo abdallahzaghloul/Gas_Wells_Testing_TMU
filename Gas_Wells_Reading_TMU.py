@@ -26,6 +26,8 @@ st.markdown(" <center>  <h1> Well Current Parameters </h1> </font> </center> </h
 CK = st.slider("C.K %", 0.00,100.00)
 
 WHP = st.slider("WHP Psi", 300.0,5000.0)
+SEP_Pressure= st.slider("Separator Pressure Psi", 0.00,2000.00)
+SEP_Temperature= st.slider("Separator Temp. F", 0.00,200.00)
 
 Gas_Rate = st.text_input("Gas Rate (MMSCF/Day)")
 Condensate = st.text_input("Condensate (BPD)")
