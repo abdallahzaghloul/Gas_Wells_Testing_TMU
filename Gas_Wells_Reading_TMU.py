@@ -29,7 +29,3 @@ Gas_Rate = st.text_input("Gas Rate (MMSCF/Day)")
   
 
 
-
-
-
-
