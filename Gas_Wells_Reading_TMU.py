@@ -50,8 +50,7 @@ H2S = st.slider("H2S PPM", 0.00,50.00)
 Salinity = st.slider("Salinity KPPM", 0.00,300.00)
 
 
-if st.button('Save'):
- with open("games.txt", "a") as text_file
+st.button('Save')
 
 
 
