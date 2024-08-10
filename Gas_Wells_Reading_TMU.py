@@ -20,7 +20,7 @@ Date=datetime.date.today()
 Date=Date.strftime('%d-%m-%Y')
 #st.write(Date)
 
-st.markdown(" <center>  <h1> Well Current Parameters </h1> </font> </center> </h1> ",
+st.markdown(" <center>  <h1> Well Production Parameters </h1> </font> </center> </h1> ",
             unsafe_allow_html=True)
 
 CK = st.slider("C.K %", 0.00,100.00)
@@ -36,7 +36,17 @@ FLT = st.slider("FLT F", 0.00,200.00)
 Gas_Rate = st.text_input("Gas Rate (MMSCF/Day)")
 Condensate = st.text_input("Condensate (BPD)")
 Water = st.text_input("Water (BPD)")
+GOR = st.text_input("Gas Oil Ratio")
 
+BSW = st.slider("BS & W %", 0.00,100.00)
+
+
+st.markdown(" <center>  <h1> Well Impurities Parameters </h1> </font> </center> </h1> ",
+            unsafe_allow_html=True)
+
+CO2 = st.slider("CO2 %", 0.00,100.00)
+H2S = st.slider("H2S PPM", 0.00,50.00)
+Salinity = st.slider("Salinity KPPM", 0.00,300.00)
 
 
 
