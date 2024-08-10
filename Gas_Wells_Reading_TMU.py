@@ -55,5 +55,26 @@ st.button('Save')
 
 Data = {'Well_Name': Well_Name, 'C.K %': CK, 'API': API}
 Data=Data.transpose()
-st.dataframe(dict_)
+st.dataframe(Data)
 pd.DataFrame([dict_])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
