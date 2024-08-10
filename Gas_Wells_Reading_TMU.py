@@ -38,7 +38,7 @@ Condensate = st.text_input("Condensate (BPD)")
 Water = st.text_input("Water (BPD)")
 GOR = st.text_input("Gas Oil Ratio")
 
-API = st.slider("API Degree", 0.00,60)
+API = st.slider("API Degree", 0.00,60.00)
 BSW = st.slider("BS & W %", 0.00,100.00)
 
 
