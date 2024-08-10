@@ -16,9 +16,7 @@ st.write('You selected:', Well_Name)
 
 from datetime import time
 
-appointment = st.slider(
-    "Schedule your appointment:", value=(time(11, 30), time(12, 45))
-)
+appointment = st.slider("Reading Registeration:", value=(time(11, 30)))
 st.write("You're scheduled for:", appointment)
 
 
