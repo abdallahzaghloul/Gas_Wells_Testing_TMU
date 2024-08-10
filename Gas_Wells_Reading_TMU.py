@@ -51,7 +51,7 @@ Salinity = st.slider("Salinity KPPM", 0.00,300.00)
 
 
 if st.button('Save'):
-            with open("games.txt", "a") as text_file:
+ with open("games.txt", "a") as text_file:
 
 
 
