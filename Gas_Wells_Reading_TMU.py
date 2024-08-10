@@ -51,3 +51,6 @@ Salinity = st.slider("Salinity KPPM", 0.00,300.00)
 
 
 
+st.button('Save')
+
+
