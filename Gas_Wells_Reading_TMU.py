@@ -16,12 +16,11 @@ Well_Name = st.selectbox('The Well Name for current Testing',('BARAKAT-D01X','BA
 from datetime import time
 
 Reading_Registeration = st.slider("Reading Registeration:", value=(time(11, 30)))
-
-
-
-
 st.write(datetime.date.today())
+from st_radial import st_radial
 
+val = st.slider('Percentage Input',min_value=0, max_value=100)  
+st_radial('You selected',val) 
 
 
 
