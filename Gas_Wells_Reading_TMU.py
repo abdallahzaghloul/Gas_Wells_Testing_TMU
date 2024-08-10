@@ -29,7 +29,7 @@ WHP = st.slider("WHP Psi", 300.0,5000.0)
 SEP_Pressure= st.slider("Separator Pressure Psi", 0.00,2000.00)
 SEP_Temperature= st.slider("Separator Temp. F", 0.00,200.00)
 
-FLP= st.slider("FLP Psi", 0.00,1400)
+FLP= st.slider("FLP Psi", 0.00,1400.00)
 FLT = st.slider("FLT F", 0.00,200.00)
 
 
