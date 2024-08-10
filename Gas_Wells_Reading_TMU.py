@@ -55,7 +55,7 @@ st.button('Save')
 
 Data = {'Well_Name': Well_Name, 'C.K %': CK, 'API': API}
 Data=pd.DataFrame([Data])
-
+Data.reset_index(inplace=True)
 
 Data.drop(['index'], axis=1, inplace=True)
 st.dataframe(Data)
