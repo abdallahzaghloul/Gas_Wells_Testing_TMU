@@ -23,7 +23,7 @@ Date=Date.strftime('%d-%m-%Y')
 st.markdown(" <center>  <h1> Well Current Parameters </h1> </font> </center> </h1> ",
             unsafe_allow_html=True)
 
-CK = st.slider("C.K %", 0,100)
+CK = st.slider("C.K %", 0.00,100.00)
 
 
 
