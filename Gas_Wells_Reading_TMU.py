@@ -14,3 +14,12 @@ Well_Name = st.selectbox('The Well Name for current Testing',('BARAKAT-D01X','BA
 st.write('You selected:', Well_Name)
 
 
+from datetime import time
+
+appointment = st.slider(
+    "Schedule your appointment:", value=(time(11, 30), time(12, 45))
+)
+st.write("You're scheduled for:", appointment)
+
+
+
