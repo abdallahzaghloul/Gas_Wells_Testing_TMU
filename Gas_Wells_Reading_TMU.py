@@ -50,7 +50,6 @@ H2S = st.slider("H2S PPM", 0.00,50.00)
 Salinity = st.slider("Salinity KPPM", 0.00,300.00)
 
 
-st.button('Save')
 
 
 Data = {'Well_Name': Well_Name, 'C.K %': CK, 'API': API}
@@ -58,8 +57,9 @@ Data=pd.DataFrame([Data])
 st.dataframe(Data)
 
 
-
-
+if st.button('Save'):
+ with pd.ExcelWriter('Gas_Wells_Readings.xlsx', engine='openpyxl', mode='a') as writer:
+ new_df.to_excel(writer, sheet_name='Sheet1', index=False, header=None)
 
 
 
