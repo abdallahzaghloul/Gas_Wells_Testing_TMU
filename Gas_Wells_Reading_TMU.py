@@ -53,7 +53,7 @@ Salinity = st.slider("Salinity KPPM", 0.00,300.00)
 st.button('Save')
 
 
-dict_ = {'Well_Name': Well_Name, 'C.K %': CK, 'API': API}
-
+Data = {'Well_Name': Well_Name, 'C.K %': CK, 'API': API}
+Data=Data.transpose()
 st.dataframe(dict_)
 pd.DataFrame([dict_])
