@@ -19,3 +19,10 @@ Reading_Registeration = st.slider("Reading Registeration:", value=(time(11, 30))
 
 
 
+
+st.write(datetime.date.today())
+
+
+
+
+
