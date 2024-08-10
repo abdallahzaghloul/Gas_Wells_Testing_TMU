@@ -20,7 +20,7 @@ st.write(datetime.date.today())
 
 
 val = st.slider('Percentage Input',min_value=0, max_value=100)  
-st_radial('You selected',val) 
+st.radial('You selected',val) 
 
 
 
