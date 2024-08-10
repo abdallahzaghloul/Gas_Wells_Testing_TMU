@@ -18,7 +18,14 @@ from datetime import time
 Reading_Registeration = st.slider("Reading Registeration:", value=(time(11, 30)))
 Date=datetime.date.today()
 Date=Date.strftime('%d-%m-%Y')
-st.write(Date)
+#st.write(Date)
+
+st.markdown(" <center>  <h1> Well Current Parameters </h1> </font> </center> </h1> ",
+            unsafe_allow_html=True)
+
+CK = st.slider("C.K %", min_value=1)
+
+
 
 
 
