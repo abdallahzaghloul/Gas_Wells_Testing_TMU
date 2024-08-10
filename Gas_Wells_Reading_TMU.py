@@ -17,7 +17,7 @@ from datetime import time
 
 Reading_Registeration = st.slider("Reading Registeration:", value=(time(11, 30)))
 Date=datetime.date.today()
-Date=Date.dt.strftime('%d-%m-%Y')
+Date=Date.strftime('%d-%m-%Y')
 st.write()
 
 
