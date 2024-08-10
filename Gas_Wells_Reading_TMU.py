@@ -18,9 +18,5 @@ from datetime import time
 Reading_Registeration = st.slider("Reading Registeration:", value=(time(11, 30)))
 st.write(datetime.date.today())
 
-from st_radial import st_radial
-st_radial('Metric 1', value=88) 
-
-
 
 
