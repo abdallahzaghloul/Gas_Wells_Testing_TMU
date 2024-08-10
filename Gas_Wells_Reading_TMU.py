@@ -57,7 +57,7 @@ Data = {'Well_Name': Well_Name, 'C.K %': CK, 'API': API}
 Data=pd.DataFrame([Data])
 
 
-#Data=Data.transpose()
+Data.drop(['index'], axis=1, inplace=True)
 st.dataframe(Data)
 
 
