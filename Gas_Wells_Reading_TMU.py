@@ -20,11 +20,7 @@ Reading_Registeration = st.slider("Reading Registeration:", value=(time(11, 30))
 
 st.write("You're scheduled for:", Reading_Registeration)
 
-start_time = st.slider(
-    "When do you start?",
-    value=datetime(2020, 1, 1, 9, 30),
-    format="MM/DD/YY - hh:mm",
-)
+start_time = st.slider("When do you start?",value=datetime(2020, 1, 9),format="MM/DD/YY - hh:mm",)
 st.write("Start time:", start_time)
 
 
