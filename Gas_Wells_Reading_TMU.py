@@ -6,4 +6,4 @@ import pandas as pd #2
 import datetime
 im = Image.open("KPC.jpg")
 image = np.array(im)
-st.image("image")
+#st.image("image")
