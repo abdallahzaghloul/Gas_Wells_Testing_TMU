@@ -25,6 +25,8 @@ st.markdown(" <center>  <h1> Well Current Parameters </h1> </font> </center> </h
 
 CK = st.slider("C.K %", 0.00,100.00)
 
+Gas_Rate = st.input("Gas Rate (MMSCF/Day)")
+  
 
 
 
