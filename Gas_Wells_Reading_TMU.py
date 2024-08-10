@@ -20,7 +20,7 @@ Date=datetime.date.today()
 Date=Date.strftime('%d-%m-%Y')
 #st.write(Date)
 
-st.markdown(" <center>  <h1> Well Production Parameters </h1> </font> </center> </h1> ",
+st.markdown(" <right>  <h1> Well Production Parameters </h1> </font> </right> </h1> ",
             unsafe_allow_html=True)
 
 CK = st.slider("C.K %", 0.00,100.00)
