@@ -25,12 +25,12 @@ st.markdown(" <right>  <h1> Well Production Parameters </h1> </font> </right> </
 
 CK = st.slider("C.K %", 0.00,100.00,value=30.00,key="CK",step=0.1)
 
-WHP = st.slider("WHP Psi", 300.0,5000.0,value=700.00,key="WHP",step=1)
-SEP_Pressure= st.slider("Separator Pressure Psi", 0.00,2000.00,value=400.00,key="SEP_Pressure",step=1)
-SEP_Temperature= st.slider("Separator Temp. F", 0.00,250.00,value=100.00,key="SEP_Temp",step=1)
+WHP = st.slider("WHP Psi", 300.0,5000.0,value=700.00,key="WHP",step=1.00)
+SEP_Pressure= st.slider("Separator Pressure Psi", 0.00,2000.00,value=400.00,key="SEP_Pressure",step=1.00)
+SEP_Temperature= st.slider("Separator Temp. F", 0.00,250.00,value=100.00,key="SEP_Temp",step=1.00)
 
-FLP= st.slider("FLP Psi", 0.00,1400.00,value=400.00,key="FLP",step=1)
-FLT = st.slider("FLT F", 0.00,250.00,value=100.00,key="FLT",step=1)
+FLP= st.slider("FLP Psi", 0.00,1400.00,value=400.00,key="FLP",step=1.00)
+FLT = st.slider("FLT F", 0.00,250.00,value=100.00,key="FLT",step=1.00)
 
 
 Gas_Rate = st.text_input("Gas Rate (MMSCF/Day)",key="Gas_Rate")
