@@ -117,8 +117,8 @@ st.write("SAL KPPM  = ",Sal)
 
 
 if st.button('Save'):
- df0.to_excel("Gas_Wells_Test_Readings.xlsx",sheet_name="Sheet1")
-
+ with pd.ExcelWriter('Gas_Wells_Test_Readings.xlsx') as writer:  
+    df0.to_excel(writer, sheet_name='Sheet1')
 
 
 
