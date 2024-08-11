@@ -117,7 +117,7 @@ st.write("SAL KPPM  = ",Sal)
 
 
 if st.button('Save'):
- df0.to_excel("Gas_Wells_Test_Readings.xlsx",sheet="Sheet1")
+ df0.to_excel("Gas_Wells_Test_Readings.xlsx",sheet_name="Sheet1")
 
 
 
