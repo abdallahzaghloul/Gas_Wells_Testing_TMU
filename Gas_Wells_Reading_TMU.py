@@ -59,7 +59,12 @@ df=pd.DataFrame([Data])
 df["Date"]=pd.to_datetime(df["Date"])
 df["C.K%"]=df["C.K%"].astype("str")+ "%"
 df["BS&W"]=df["C.K%"].astype("str")+ "%"
-
+df["Water"]=df["Water"].astype("str")+ " BBL/D"
+df["Condensate"]=df["Condensate"].astype("str")+ " BBL/D"
+df["WHP"]=df["WHP"].astype("str")+ " Psi"
+df["SEP_Pressure"]=df["SEP_Pressure"].astype("str")+ " Psi"
+df["FLP"]=df["FLP"].astype("str")+ " Psi"
+ 
 
 
 
