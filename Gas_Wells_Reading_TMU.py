@@ -57,7 +57,7 @@ Data = {'Well_Name': Well_Name,'Date':Date,'C.k %': CK,'WHP': WHP,'SEP_Pressure'
 df=pd.DataFrame([Data])
 
 df["Date"]=pd.to_datetime(df["Date"])
-df["C.K %"]=df["C.K %"]+ "%"
+df["C.K %"]=df["C.K %"].astype("str")+ "%"
 
 
 
