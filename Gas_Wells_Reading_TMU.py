@@ -124,7 +124,7 @@ st.write("SAL KPPM  = ",Sal)
 if st.button('Save'):
  with open('vars.txt', 'r') as file:
   for line in file:
-  vars.append(line.replace('\n', ''))
+   vars.append(line.replace('\n', ''))
 
 
 
