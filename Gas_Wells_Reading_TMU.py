@@ -53,12 +53,15 @@ Sal = st.slider("Salinity KPPM", 0.00,300.00,value=281.00,key="Sal")
 
 
 
-Data = {'Well_Name': Well_Name,'C.k %': CK,'WHP': WHP,'SEP_Pressure': SEP_Pressure,'SEP_Temperature': SEP_Temperature,'FLP': FLP,'FLT': FLT,'Gas_Rate': Gas_Rate,'Condensate': Condensate,'Water': Water,'GOR': GOR,'API': API,'BSW': BSW}
-Data=pd.DataFrame([Data])
+Data = {'Well_Name': Well_Name,'Date':Date,'C.k %': CK,'WHP': WHP,'SEP_Pressure': SEP_Pressure,'SEP_Temperature': SEP_Temperature,'FLP': FLP,'FLT': FLT,'Gas_Rate': Gas_Rate,'Condensate': Condensate,'Water': Water,'GOR': GOR,'API': API,'BSW': BSW}
+df=pd.DataFrame([Data])
+
+df([Date])=pd.to_datetime(df["Date"])
 st.dataframe(Data)
 st.write("CO2 %  = ",CO2)
 st.write("H2S PPM  = ",H2S)
 st.write("SAL KPPM  = ",Sal)
+
 
 
 st.button('Save')
