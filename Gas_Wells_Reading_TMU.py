@@ -122,9 +122,9 @@ st.write("SAL KPPM  = ",Sal)
 #    df0.to_excel(writer, sheet_name='Sheet1')
 
 if st.button('Save'):
-with open('vars.txt', 'r') as file:
-    for line in file:
-        vars.append(line.replace('\n', ''))
+ with open('vars.txt', 'r') as file:
+  for line in file:
+  vars.append(line.replace('\n', ''))
 
 
 
