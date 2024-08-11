@@ -48,7 +48,7 @@ st.markdown(" <center>  <h1> Well Impurities Parameters </h1> </font> </center> 
 
 CO2 = st.slider("CO2 %", 0.00,100.00,value=12.00,key="CO2",step=0.1)
 H2S = st.slider("H2S PPM", 0.00,50.00,value=8.00,key="H2S",step=0.1)
-Sal = st.slider("Salinity KPPM", 0.00,300.00,value=281.00,key="Sal",step=0.01)
+Sal = st.slider("Salinity KPPM", 0.00,300.00,value=281.00,key="Sal",step=0.2)
 
 
 
