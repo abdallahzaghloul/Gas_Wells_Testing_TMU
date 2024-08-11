@@ -4,7 +4,6 @@ import streamlit as st
 import numpy as np #1
 import pandas as pd #2
 import datetime
-from github import Github
 im = Image.open("KPC.png")
 image= np.array(im)
 st.image(image)
@@ -117,14 +116,9 @@ st.write("SAL KPPM  = ",Sal)
 
 
 
-#if st.button('Save'):
+st.button('Save')
 # with pd.ExcelWriter('Gas_Wells_Test_Readings.xlsx') as writer:  
 #    df0.to_excel(writer, sheet_name='Sheet1')
-
-if st.button('Save'):
- with open('vars.txt', 'r') as file:
-  for line in file:
-   vars.append(line.replace('\n', ''))
 
 
 
