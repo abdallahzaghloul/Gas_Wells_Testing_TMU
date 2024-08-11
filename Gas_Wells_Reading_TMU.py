@@ -58,6 +58,28 @@ df=pd.DataFrame([Data])
 
 df([Date])=pd.to_datetime(df["Date"])
 st.dataframe(Data)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 st.write("CO2 %  = ",CO2)
 st.write("H2S PPM  = ",H2S)
 st.write("SAL KPPM  = ",Sal)
