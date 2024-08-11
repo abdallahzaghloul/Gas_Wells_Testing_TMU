@@ -39,7 +39,7 @@ Water = st.text_input("Water (BPD)",key="Water")
 GOR = st.text_input("Gas Oil Ratio",key="GOR")
 
 
-API = st.slider("API Degree", 0.00,60.00,value=32.00,key="API",step=0.1)
+API = st.slider("API Degree", 0.00,60.00,value=32.00,key="API",step=1.00)
 BSW = st.slider("BS & W %", 0.00,100.00,value=20.00,key="BSW",step=0.1)
 
 
