@@ -23,7 +23,7 @@ Date=Date.strftime('%d-%m-%Y')
 st.markdown(" <right>  <h1> Well Production Parameters </h1> </font> </right> </h1> ",
             unsafe_allow_html=True)
 
-CK = st.slider("C.K %", 0.00,100.00,value=30.00,key="CK",step=0.001)
+CK = st.slider("C.K %", 0.00,100.00,value=30.00,key="CK",step=0.0001)
 
 WHP = st.slider("WHP Psi", 300.0,5000.0,value=700.00,key="WHP")
 SEP_Pressure= st.slider("Separator Pressure Psi", 0.00,2000.00,value=400.00,key="SEP_Pressure")
