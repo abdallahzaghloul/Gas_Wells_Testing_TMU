@@ -65,6 +65,9 @@ df["Condensate"]=df["Condensate"].astype("str")+ " BBL/D"
 df["WHP"]=df["WHP"].astype("str")+ " Psi"
 df["SEP_Pressure"]=df["SEP_Pressure"].astype("str")+ " Psi"
 df["FLP"]=df["FLP"].astype("str")+ " Psi"
+df["SEP_Temperature"]=df["SEP_Temperature"].astype("str")+ " F"
+df["FLT"]=df["FLT"].astype("str")+ " F" 
+df["API"]=df["API"].astype("str")+ " Deg"
  
 
 
