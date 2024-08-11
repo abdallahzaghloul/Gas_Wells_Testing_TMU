@@ -23,32 +23,32 @@ Date=Date.strftime('%d-%m-%Y')
 st.markdown(" <right>  <h1> Well Production Parameters </h1> </font> </right> </h1> ",
             unsafe_allow_html=True)
 
-CK = st.slider("C.K %", 0.00,100.00,value=30.00)
+CK = st.slider("C.K %", 0.00,100.00,value=30.00,key="CK")
 
-WHP = st.slider("WHP Psi", 300.0,5000.0,value=700.00)
-SEP_Pressure= st.slider("Separator Pressure Psi", 0.00,2000.00,value=400.00)
-SEP_Temperature= st.slider("Separator Temp. F", 0.00,250.00,value=100.00)
+WHP = st.slider("WHP Psi", 300.0,5000.0,value=700.00,key="WHP")
+SEP_Pressure= st.slider("Separator Pressure Psi", 0.00,2000.00,value=400.00,key="SEP_Pressure")
+SEP_Temperature= st.slider("Separator Temp. F", 0.00,250.00,value=100.00,key="SEP_Temp")
 
-FLP= st.slider("FLP Psi", 0.00,1400.00,value=400.00)
-FLT = st.slider("FLT F", 0.00,250.00,value=100.00)
-
-
-Gas_Rate = st.text_input("Gas Rate (MMSCF/Day)")
-Condensate = st.text_input("Condensate (BPD)")
-Water = st.text_input("Water (BPD)")
-GOR = st.text_input("Gas Oil Ratio")
+FLP= st.slider("FLP Psi", 0.00,1400.00,value=400.00,key="FLP")
+FLT = st.slider("FLT F", 0.00,250.00,value=100.00,key="FLT")
 
 
-API = st.slider("API Degree", 0.00,60.00,value=32.00)
-BSW = st.slider("BS & W %", 0.00,100.00,value=20.00)
+Gas_Rate = st.text_input("Gas Rate (MMSCF/Day)",key="Gas_Rate")
+Condensate = st.text_input("Condensate (BPD)",key="Condensate")
+Water = st.text_input("Water (BPD)",key="Water")
+GOR = st.text_input("Gas Oil Ratio",key="GOR")
+
+
+API = st.slider("API Degree", 0.00,60.00,value=32.00,key="API")
+BSW = st.slider("BS & W %", 0.00,100.00,value=20.00,key="BSW")
 
 
 st.markdown(" <center>  <h1> Well Impurities Parameters </h1> </font> </center> </h1> ",
             unsafe_allow_html=True)
 
-CO2 = st.slider("CO2 %", 0.00,100.00,value=12.00)
-H2S = st.slider("H2S PPM", 0.00,50.00,value=8.00)
-Salinity = st.slider("Salinity KPPM", 0.00,300.00,value=281.00)
+CO2 = st.slider("CO2 %", 0.00,100.00,value=12.00,key="CO2")
+H2S = st.slider("H2S PPM", 0.00,50.00,value=8.00,key="H2S")
+Salinity = st.slider("Salinity KPPM", 0.00,300.00,value=281.00,key="Sal")
 
 
 
