@@ -54,20 +54,21 @@ Sal = st.slider("Salinity KPPM", 0.00,300.00,value=281.00,key="Sal",step=0.01)
 
 
 Data = {'Well_Name': Well_Name,'Date':Date,'C.K%': CK,'WHP': WHP,'SEP_Pressure': SEP_Pressure,'SEP_Temperature': SEP_Temperature,'FLP': FLP,'FLT': FLT,'Gas_Rate': Gas_Rate,'Condensate': Condensate,'Water': Water,'GOR': GOR,'API': API,'BS&W': BSW}
-df=pd.DataFrame([Data])
+df0=pd.DataFrame([Data])
+df1=pd.DataFrame([Data])
 
-df["Date"]=pd.to_datetime(df["Date"])
-df["C.K%"]=df["C.K%"].astype("str")+ "%"
-df["BS&W"]=df["C.K%"].astype("str")+ "%"
-df["Gas_Rate"]=df["Gas_Rate"].astype("str")+ " MMSCF/D"
-df["Water"]=df["Water"].astype("str")+ " BBL/D"
-df["Condensate"]=df["Condensate"].astype("str")+ " BBL/D"
-df["WHP"]=df["WHP"].astype("str")+ " Psi"
-df["SEP_Pressure"]=df["SEP_Pressure"].astype("str")+ " Psi"
-df["FLP"]=df["FLP"].astype("str")+ " Psi"
-df["SEP_Temperature"]=df["SEP_Temperature"].astype("str")+ " F"
-df["FLT"]=df["FLT"].astype("str")+ " F" 
-df["API"]=df["API"].astype("str")+ " Deg"
+df1["Date"]=pd.to_datetime(df1["Date"])
+df1["C.K%"]=df1["C.K%"].astype("str")+ "%"
+df1["BS&W"]=df1["C.K%"].astype("str")+ "%"
+df1["Gas_Rate"]=df1["Gas_Rate"].astype("str")+ " MMSCF/D"
+df1["Water"]=df1["Water"].astype("str")+ " BBL/D"
+df1["Condensate"]=df1["Condensate"].astype("str")+ " BBL/D"
+df1["WHP"]=df1["WHP"].astype("str")+ " Psi"
+df1["SEP_Pressure"]=df1["SEP_Pressure"].astype("str")+ " Psi"
+df1["FLP"]=df1["FLP"].astype("str")+ " Psi"
+df1["SEP_Temperature"]=df1["SEP_Temperature"].astype("str")+ " F"
+df1["FLT"]=df1["FLT"].astype("str")+ " F" 
+df1["API"]=df1["API"].astype("str")+ " Deg"
  
 
 
@@ -107,7 +108,7 @@ df["API"]=df["API"].astype("str")+ " Deg"
 
 
 
-st.dataframe(df)
+st.dataframe(df1)
 st.write("CO2 %  = ",CO2)
 st.write("H2S PPM  = ",H2S)
 st.write("SAL KPPM  = ",Sal)
