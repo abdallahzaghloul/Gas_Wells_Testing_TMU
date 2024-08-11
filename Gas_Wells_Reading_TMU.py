@@ -109,7 +109,7 @@ df1["API"]=df1["API"].astype("str")+ " Deg"
 
 
 
-st.dataframe(df1,width=350, height = 500)
+st.dataframe(df1,width=300, height = 500)
 st.write("CO2 %  = ",CO2)
 st.write("H2S PPM  = ",H2S)
 st.write("SAL KPPM  = ",Sal)
