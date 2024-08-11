@@ -48,14 +48,17 @@ st.markdown(" <center>  <h1> Well Impurities Parameters </h1> </font> </center> 
 
 CO2 = st.slider("CO2 %", 0.00,100.00,value=12.00,key="CO2")
 H2S = st.slider("H2S PPM", 0.00,50.00,value=8.00,key="H2S")
-Salinity = st.slider("Salinity KPPM", 0.00,300.00,value=281.00,key="Sal")
+Sal = st.slider("Salinity KPPM", 0.00,300.00,value=281.00,key="Sal")
 
 
 
 
-Data = {'Well_Name': Well_Name}
+Data = {'Well_Name': Well_Name,'C.k %': CK,'WHP': WHP,'SEP_Pressure': SEP_Pressure,'SEP_Temperature': SEP_Temperature,'FLP': FLP,'FLT': FLT,'Gas_Rate': Gas_Rate,'Condensate': Condensate,'Water': Water,'GOR': GOR,'API': API,'BSW': BSW}
 Data=pd.DataFrame([Data])
 st.dataframe(Data)
+st.write("CO2 %  = ",CO2)
+st.write("H2S PPM  = ",H2S)
+st.write("SAL KPPM  = ",Sal)
 
 
 st.button('Save')
