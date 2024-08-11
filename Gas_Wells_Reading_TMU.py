@@ -58,6 +58,7 @@ df0=pd.DataFrame([Data])
 df1=pd.DataFrame([Data])
 
 df1["Date"]=pd.to_datetime(df1["Date"])
+df1["Date"]=df1.Date.strftime('%d-%m-%Y')
 df1["C.K%"]=df1["C.K%"].astype("str")+ "%"
 df1["BS&W"]=df1["C.K%"].astype("str")+ "%"
 df1["Gas_Rate"]=df1["Gas_Rate"].astype("str")+ " MMSCF/D"
