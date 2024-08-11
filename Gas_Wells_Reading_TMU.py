@@ -56,7 +56,7 @@ Sal = st.slider("Salinity KPPM", 0.00,300.00,value=281.00,key="Sal")
 Data = {'Well_Name': Well_Name,'Date':Date,'C.k %': CK,'WHP': WHP,'SEP_Pressure': SEP_Pressure,'SEP_Temperature': SEP_Temperature,'FLP': FLP,'FLT': FLT,'Gas_Rate': Gas_Rate,'Condensate': Condensate,'Water': Water,'GOR': GOR,'API': API,'BSW': BSW}
 df=pd.DataFrame([Data])
 
-df([Date])=pd.to_datetime(df["Date"])
+df["Date"]=pd.to_datetime(df["Date"])
 st.dataframe(Data)
 
 
