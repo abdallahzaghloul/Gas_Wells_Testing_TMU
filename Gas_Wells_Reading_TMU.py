@@ -53,7 +53,7 @@ Salinity = st.slider("Salinity KPPM", 0.00,300.00,value=281.00,key="Sal")
 
 
 
-Data = {'Well_Name': st.session.Well_Name}
+Data = {'Well_Name': st.session_state.Well_Name}
 Data=pd.DataFrame([Data])
 st.dataframe(Data)
 
