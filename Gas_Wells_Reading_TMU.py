@@ -25,12 +25,12 @@ st.markdown(" <right>  <h1> Well Production Parameters </h1> </font> </right> </
 
 CK = st.slider("C.K %", 0.00,100.00,value=30.00,key="CK",step=0.1)
 
-WHP = st.slider("WHP Psi", 300.0,5000.0,value=700.00,key="WHP",step=0.1)
-SEP_Pressure= st.slider("Separator Pressure Psi", 0.00,2000.00,value=400.00,key="SEP_Pressure",step=0.1)
-SEP_Temperature= st.slider("Separator Temp. F", 0.00,250.00,value=100.00,key="SEP_Temp",step=0.1)
+WHP = st.slider("WHP Psi", 300.0,5000.0,value=700.00,key="WHP",step=1)
+SEP_Pressure= st.slider("Separator Pressure Psi", 0.00,2000.00,value=400.00,key="SEP_Pressure",step=1)
+SEP_Temperature= st.slider("Separator Temp. F", 0.00,250.00,value=100.00,key="SEP_Temp",step=1)
 
-FLP= st.slider("FLP Psi", 0.00,1400.00,value=400.00,key="FLP",step=0.1)
-FLT = st.slider("FLT F", 0.00,250.00,value=100.00,key="FLT",step=0.1)
+FLP= st.slider("FLP Psi", 0.00,1400.00,value=400.00,key="FLP",step=1)
+FLT = st.slider("FLT F", 0.00,250.00,value=100.00,key="FLT",step=1)
 
 
 Gas_Rate = st.text_input("Gas Rate (MMSCF/Day)",key="Gas_Rate")
@@ -48,7 +48,7 @@ st.markdown(" <center>  <h1> Well Impurities Parameters </h1> </font> </center> 
 
 CO2 = st.slider("CO2 %", 0.00,100.00,value=12.00,key="CO2",step=0.1)
 H2S = st.slider("H2S PPM", 0.00,50.00,value=8.00,key="H2S",step=0.1)
-Sal = st.slider("Salinity KPPM", 0.00,300.00,value=281.00,key="Sal",step=0.1)
+Sal = st.slider("Salinity KPPM", 0.00,300.00,value=281.00,key="Sal",step=0.01)
 
 
 
