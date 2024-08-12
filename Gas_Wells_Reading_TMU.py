@@ -86,7 +86,8 @@ st.write("SAL KPPM  = ",Sal)
 
 if st.button('Save'):
  pd.set_option('mode.chained_assignment',None)
- df1 = pd.read_excel(url,'Sheet1')
+ df2 = pd.read_excel(url,'Sheet1')
+ st.write(df2)
 
 
 
