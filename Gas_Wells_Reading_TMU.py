@@ -4,7 +4,7 @@ import streamlit as st
 
 
 import requests
-url=("https://github.com/abdallahzaghloul/Logs_Correlation/blob/main/Logs_Data_Base.xlsx?raw=true")
+url=(""https://github.com/abdallahzaghloul/Gas_Wells_Testing_TMU/blob/2450b9ec4a4e49a2501e6f7c8f1f1fc74fd0dc9c/Gas_Wells_Reading.xlsx?raw=true"")
 response =requests.get(url)
 
 import numpy as np #1
