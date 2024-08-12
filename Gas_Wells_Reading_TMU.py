@@ -1,5 +1,6 @@
 
 from PIL import Image
+from streamlit_gsheets import GSheetsConnection
 import streamlit as st
 import numpy as np #1
 import pandas as pd #2
