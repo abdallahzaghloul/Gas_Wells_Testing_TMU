@@ -2,7 +2,7 @@
 from PIL import Image
 #url="https://docs.google.com/spreadsheets/d/1lKqWSVy5E6NK6kibwRRxQzXWu10GbnB-N4kpoWusAw8/edit?gid=0#gid=0?usp=sharing"
 import streamlit as st
-from streamlit_gsheets import GSheets Connection
+#from streamlit_gsheets import GSheets Connection
 #streamlit>=1.22.0
 #st-gsheets-connection
 
