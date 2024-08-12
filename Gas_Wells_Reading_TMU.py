@@ -84,10 +84,9 @@ st.write("SAL KPPM  = ",Sal)
 
 
 
-st.button('Save')
-# with pd.ExcelWriter('Gas_Wells_Test_Readings.xlsx') as writer:  
-#    df0.to_excel(writer, sheet_name='Sheet1')
-
+if st.button('Save'):
+ pd.set_option('mode.chained_assignment',None)
+ df1 = pd.read_excel(url,'Sheet1')
 
 
 
