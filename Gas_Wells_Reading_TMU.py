@@ -76,44 +76,6 @@ df1["SEP_Temperature"]=df1["SEP_Temperature"].astype("str")+ " F"
 df1["FLT"]=df1["FLT"].astype("str")+ " F" 
 df1["API"]=df1["API"].astype("str")+ " Deg"
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 st.dataframe(df1,width=1200)
 st.write("CO2 %  = ",CO2)
 st.write("H2S PPM  = ",H2S)
