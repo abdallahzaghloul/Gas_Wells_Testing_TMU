@@ -1,7 +1,7 @@
 
 from PIL import Image
 from streamlit_gsheets import GSheetsConnection
-url="https://docs.google.com/spreadsheets/d/1lKqWSVy5E6NK6kibwRRxQzXWu10GbnB-N4kpoWusAw8/edit?gid=0#gid=0?usp=sharing"
+#url="https://docs.google.com/spreadsheets/d/1lKqWSVy5E6NK6kibwRRxQzXWu10GbnB-N4kpoWusAw8/edit?gid=0#gid=0?usp=sharing"
 import streamlit as st
 import numpy as np #1
 import pandas as pd #2
