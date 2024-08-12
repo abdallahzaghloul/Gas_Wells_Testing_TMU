@@ -1,10 +1,11 @@
 
 from PIL import Image
-#url="https://docs.google.com/spreadsheets/d/1lKqWSVy5E6NK6kibwRRxQzXWu10GbnB-N4kpoWusAw8/edit?gid=0#gid=0?usp=sharing"
 import streamlit as st
-#from streamlit_gsheets import GSheets Connection
-#streamlit>=1.22.0
-#st-gsheets-connection
+
+
+import requests
+url=("https://github.com/abdallahzaghloul/Logs_Correlation/blob/main/Logs_Data_Base.xlsx?raw=true")
+response =requests.get(url)
 
 import numpy as np #1
 import pandas as pd #2
