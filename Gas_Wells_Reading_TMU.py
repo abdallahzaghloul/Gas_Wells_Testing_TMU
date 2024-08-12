@@ -4,8 +4,8 @@ import streamlit as st
 
 
 import requests
-url=(""https://github.com/abdallahzaghloul/Gas_Wells_Testing_TMU/blob/2450b9ec4a4e49a2501e6f7c8f1f1fc74fd0dc9c/Gas_Wells_Reading.xlsx?raw=true"")
-response =requests.get(url)
+url=("https://github.com/abdallahzaghloul/Gas_Wells_Testing_TMU/blob/main/Gas_Wells_Reading.xlsx?raw=true")
+response =requests.get(url) 
 
 import numpy as np #1
 import pandas as pd #2
