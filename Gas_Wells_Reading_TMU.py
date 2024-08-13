@@ -2,7 +2,7 @@
 from PIL import Image
 import streamlit as st
 from pydrive.drive import GoogleDrive
-from pydrive.drive import GoogleAuth
+from pydrive.auth import GoogleAuth
 import requests
 import httplib2
 from googleapiclient import discovery
