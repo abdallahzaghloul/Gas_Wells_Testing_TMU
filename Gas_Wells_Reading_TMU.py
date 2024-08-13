@@ -3,6 +3,13 @@ from PIL import Image
 import streamlit as st
 from pydrive.drive import GoogleDrive
 from pydrive.auth import GoogleAuth
+
+gauth=GoogleAuth()
+gauth.LocalWebServerAuth()
+
+drive=GoogleDrive(gauth)
+
+
 import requests
 import httplib2
 from googleapiclient import discovery
