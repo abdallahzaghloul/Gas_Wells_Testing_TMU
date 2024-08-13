@@ -1,7 +1,6 @@
 
 from PIL import Image
 import streamlit as st
-import streamlit_gsheets
 
 import requests
 url=("https://github.com/abdallahzaghloul/Gas_Wells_Testing_TMU/blob/main/Gas_Wells_Reading.xlsx?raw=true")
