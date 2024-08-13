@@ -2,7 +2,6 @@
 from PIL import Image
 import streamlit as st
 from pydrive.drive import GoogleDrive
-import streamlit_gsheets
 import requests
 url=("https://github.com/abdallahzaghloul/Gas_Wells_Testing_TMU/blob/main/Gas_Wells_Reading.xlsx?raw=true")
 response =requests.get(url) 
