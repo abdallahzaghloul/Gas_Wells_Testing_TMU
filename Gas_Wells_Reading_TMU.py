@@ -12,7 +12,7 @@ import os
 from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials 
 gauth=GoogleAuth()
-gauth.LocalWebserverAuth()
+#gauth.LocalWebserverAuth()
 
 drive=GoogleDrive(gauth)
 
