@@ -1,50 +1,13 @@
 from PIL import Image
 import streamlit as st
 import json
-from pydrive.drive import GoogleDrive
-from pydrive.auth import GoogleAuth
 import requests
-import httplib2
-from googleapiclient import discovery
-from oauth2client.client import AccessTokenCredentials
-from google.oauth2.credentials import Credentials 
-from googleapiclient.http import MediaIoBaseDownload
-from google.auth.transport.requests import Request
-from google_auth_oauthlib.flow import InstalledAppFlow
-from googleapiclient.discovery import build
-from googleapiclient.errors import HttpError
-gauth=GoogleAuth()
 
 from streamlit_gsheets import GSheetsConnection
 conn = st.connection("gsheets", type=GSheetsConnection)
 import os
-SCOPES=["https://googleapis.com/auth/spreadsheets"]
-SPREADSHEET_ID = "1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw"
-#gauth.LocalWebserverAuth(client_secrets)
-drive=GoogleDrive(gauth)
 
 
-def main():
- Credentials=None
- if os.path.exists("token.json"):
-  credentials=Credentials.from_authorized_user_file("token.json",SCOPES)  
- if not credentials or not credentials.valid:
-  if credentials and credentials.expired and credentials.refresh_token:
-   credentials.refresh(Request())
-  else:
-   InstalledAPPFlow.from_client_secrets_file("credentials.json",SCOPES)
-   credentials=flow.run_local_server(port=0)
-   with open ("token.json",w):
-    token.write(credentials.to_json())
- try: 
-  service=build("sheets","v4",credentials=credentials)
-  sheets = service.spreadsheets()
-  result = sheets.values().get(spreadsheetId=SPREADSHEET_ID, range = "Sheet1,A1:C6".execute())
-  values = result.get("values",[])
-  for row in values:
-   print(row)       
- except:
-  print(error)
             
 url=("https://github.com/abdallahzaghloul/Gas_Wells_Testing_TMU/blob/main/Gas_Wells_Reading.xlsx?raw=true")
 
