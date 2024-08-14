@@ -37,12 +37,12 @@ def main():
    with open ("token.json",w):
     token.write(credentials.to_json())
  try: 
- service=build("sheets","v4",credentials=credentials)
- sheets = service.spreadsheets()
- result = sheets.values().get(spreadsheetId=SPREADSHEET_ID, range = "Sheet1,A1:C6".execute()
- values = result.get("values",[])
- for row in values:
-  print(values)            
+  service=build("sheets","v4",credentials=credentials)
+  sheets = service.spreadsheets()
+  result = sheets.values().get(spreadsheetId=SPREADSHEET_ID, range = "Sheet1,A1:C6".execute()
+  values = result.get("values",[])
+  for row in values:
+   print(values)            
             
 
 
