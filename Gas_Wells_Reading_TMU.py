@@ -20,8 +20,8 @@ gauth=GoogleAuth()
 import os
 SCOPES=["https://googleapis.com/auth/spreadsheets"]
 SPREADSHEET_ID = "1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw"
-
-gauth.LocalWebserverAuth('client_secrets.json')
+client_secrets= json.load('client_secrets.json')
+gauth.LocalWebserverAuth(client_secrets)
 drive=GoogleDrive(gauth)
 
 #gauth.LocalWebserverAuth()
