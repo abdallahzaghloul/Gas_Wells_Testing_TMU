@@ -16,7 +16,7 @@ from googleapiclient.errors import HttpError
 gauth=GoogleAuth()
 
 from streamlit_gsheets import GSheetsConnection
-
+conn = st.connection("gsheets", type=GSheetsConnection)
 import os
 SCOPES=["https://googleapis.com/auth/spreadsheets"]
 SPREADSHEET_ID = "1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw"
