@@ -42,7 +42,7 @@ def main():
   result = sheets.values().get(spreadsheetId=SPREADSHEET_ID, range = "Sheet1,A1:C6".execute())
   values = result.get("values",[])
   for row in values:
-   print(values)       
+   print(row)       
  except:
   print(error)
             
