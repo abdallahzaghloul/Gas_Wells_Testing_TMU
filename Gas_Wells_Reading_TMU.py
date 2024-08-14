@@ -10,6 +10,7 @@ from googleapiclient import discovery
 from oauth2client.client import AccessTokenCredentials
 from google.oauth2.credentials import Credentials 
 from googleapiclient.http import MediaIoBaseDownload
+drive=GoogleDrive(gauth)
 
 gauth=GoogleAuth()
 
@@ -17,12 +18,10 @@ import os
 from google.auth.transport.requests import Request
 from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
-from googleapiclient.errors import HTTpError
+#from googleapiclient.errors import HTTpError
 SCOPES=["https://googleapis.com/auth/spreadsheets"]
 
-gauth.LocalWebserverAuth()
 gauth.LocalWebserverAuth(client_secrets='client_secrets.json')
-drive=GoogleDrive(gauth)
 
 url=("https://github.com/abdallahzaghloul/Gas_Wells_Testing_TMU/blob/main/Gas_Wells_Reading.xlsx?raw=true")
 response =requests.get(url) 
