@@ -8,7 +8,24 @@ conn = st.connection("gsheets", type=GSheetsConnection)
 import os
 
 
-            
+
+
+
+if st.button("Notes"):
+        notes = "Notes:- "
+        with st.sidebar:
+            st.title("Notes")
+            st.text_area("Text", notes, height=300)
+            st.download_button(
+                label="Download Notes",
+                data=notes,
+                file_name="my_notes.txt")
+
+
+
+
+
+
 url=("https://github.com/abdallahzaghloul/Gas_Wells_Testing_TMU/blob/main/Gas_Wells_Reading.xlsx?raw=true")
 
 response =requests.get(url) 
