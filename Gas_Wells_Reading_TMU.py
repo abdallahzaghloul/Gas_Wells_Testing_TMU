@@ -10,6 +10,11 @@ from oauth2client.client import AccessTokenCredentials
 
 import os
 from google.auth.transport.requests import Request
+from google_auth_oauthlib.flow import InstalledAppFlow
+from googleapiclient.discovery import build
+from googleapiclient.errors import HTTpError
+SCOPES=["https://googleapis.com/auth/spreadsheets"]
+
 from google.oauth2.credentials import Credentials 
 gauth=GoogleAuth()
 #gauth.LocalWebserverAuth()
