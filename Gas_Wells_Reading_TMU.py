@@ -22,9 +22,10 @@ drive=GoogleDrive(gauth)
 import os
 SCOPES=["https://googleapis.com/auth/spreadsheets"]
 
-gauth.LocalWebserverAuth(client_secrets='client_secrets.json')
+#gauth.LocalWebserverAuth(client_secrets='client_secrets.json')
 
 url=("https://github.com/abdallahzaghloul/Gas_Wells_Testing_TMU/blob/main/Gas_Wells_Reading.xlsx?raw=true")
+
 response =requests.get(url) 
 
 import numpy as np #1
