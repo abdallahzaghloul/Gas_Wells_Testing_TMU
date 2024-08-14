@@ -44,7 +44,7 @@ def main():
   for row in values:
    print(values)       
  except:
-  HttpError:
+  HttpError as error:
    print(error)
             
 url=("https://github.com/abdallahzaghloul/Gas_Wells_Testing_TMU/blob/main/Gas_Wells_Reading.xlsx?raw=true")
