@@ -44,8 +44,6 @@ def main():
   for row in values:
    print(values)            
             
-
-
 url=("https://github.com/abdallahzaghloul/Gas_Wells_Testing_TMU/blob/main/Gas_Wells_Reading.xlsx?raw=true")
 
 response =requests.get(url) 
