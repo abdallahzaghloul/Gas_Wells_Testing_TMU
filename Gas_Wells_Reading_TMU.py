@@ -20,7 +20,7 @@ from googleapiclient.discovery import build
 #from googleapiclient.errors import HTTpError
 SCOPES=["https://googleapis.com/auth/spreadsheets"]
 
-gauth.LocalWebserverAuth()
+#gauth.LocalWebserverAuth()
 
 drive=GoogleDrive(gauth)
 
