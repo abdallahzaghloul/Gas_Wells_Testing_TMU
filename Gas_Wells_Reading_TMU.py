@@ -21,7 +21,7 @@ from googleapiclient.discovery import build
 SCOPES=["https://googleapis.com/auth/spreadsheets"]
 
 #gauth.LocalWebserverAuth()
-
+gauth.LocalWebserverAuth(client_secrets='client_secrets.json')gauth.LocalWebserverAuth(client_secrets='client_secrets.json')
 drive=GoogleDrive(gauth)
 
 url=("https://github.com/abdallahzaghloul/Gas_Wells_Testing_TMU/blob/main/Gas_Wells_Reading.xlsx?raw=true")
