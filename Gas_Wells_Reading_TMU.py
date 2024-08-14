@@ -15,7 +15,7 @@ from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 gauth=GoogleAuth()
 
-
+from streamlit_gsheets import GSheetsConnection
 
 import os
 SCOPES=["https://googleapis.com/auth/spreadsheets"]
