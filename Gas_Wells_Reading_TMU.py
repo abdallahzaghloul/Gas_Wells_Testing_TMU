@@ -39,7 +39,7 @@ def main():
  try: 
   service=build("sheets","v4",credentials=credentials)
   sheets = service.spreadsheets()
-  result = sheets.values().get(spreadsheetId=SPREADSHEET_ID, range = "Sheet1,A1:C6".execute()
+  result = sheets.values().get(spreadsheetId=SPREADSHEET_ID, range = "Sheet1,A1:C6".execute())
   values = result.get("values",[])
   for row in values:
    print(values)            
