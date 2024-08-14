@@ -12,7 +12,7 @@ from googleapiclient.http import MediaIoBaseDownload
 from google.auth.transport.requests import Request
 from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
-from googleapiclient.errors import HttpError as error
+from googleapiclient.errors import HttpError
 gauth=GoogleAuth()
 
 
@@ -44,7 +44,7 @@ def main():
   for row in values:
    print(values)       
  except:
-  HttpError as error:
+  HttpError:
    print(error)
             
 url=("https://github.com/abdallahzaghloul/Gas_Wells_Testing_TMU/blob/main/Gas_Wells_Reading.xlsx?raw=true")
