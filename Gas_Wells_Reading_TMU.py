@@ -1,4 +1,3 @@
-
 from PIL import Image
 import streamlit as st
 import json
@@ -13,7 +12,7 @@ from googleapiclient.http import MediaIoBaseDownload
 from google.auth.transport.requests import Request
 from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
-#from googleapiclient.errors import HTTpError
+from googleapiclient.errors import HTTpError
 gauth=GoogleAuth()
 
 drive=GoogleDrive(gauth)
