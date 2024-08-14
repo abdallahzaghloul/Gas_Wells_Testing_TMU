@@ -3,8 +3,8 @@ import streamlit as st
 import json
 import requests
 
-from streamlit_gsheets import GSheetsConnection
-conn = st.connection("gsheets", type=GSheetsConnection)
+#from streamlit_gsheets import GSheetsConnection
+#conn = st.connection("gsheets", type=GSheetsConnection)
 import os
 
 
