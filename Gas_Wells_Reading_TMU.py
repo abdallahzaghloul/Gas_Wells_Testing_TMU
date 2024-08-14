@@ -3,7 +3,7 @@ from PIL import Image
 import streamlit as st
 from pydrive.drive import GoogleDrive
 from pydrive.auth import GoogleAuth
-import google-api-python-client
+
 gauth=GoogleAuth()
 gauth.LocalWebserverAuth()
 
