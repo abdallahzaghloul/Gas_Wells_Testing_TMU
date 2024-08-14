@@ -42,7 +42,10 @@ def main():
   result = sheets.values().get(spreadsheetId=SPREADSHEET_ID, range = "Sheet1,A1:C6".execute())
   values = result.get("values",[])
   for row in values:
-   print(values)            
+   print(values)       
+ except:
+  HttpError as error:
+   print(error)
             
 url=("https://github.com/abdallahzaghloul/Gas_Wells_Testing_TMU/blob/main/Gas_Wells_Reading.xlsx?raw=true")
 
