@@ -97,7 +97,7 @@ st.write("SAL KPPM  = ",Sal)
 
 
 
-if st.button('Save'):
+st.button('Save')
  
 from streamlit_gsheets import GSheetsConnection
 
