@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd #2
 
 import streamlit as st
-from streamlit_gsheets import GSheetsConnection
+#from streamlit_gsheets import GSheetsConnection
 
 
 import datetime
@@ -86,10 +86,10 @@ st.button('Save')
 
 st.title("Read Google Sheet as DataFrame")
 
-conn = st.experimental_connection("gsheets", type=GSheetsConnection)
-existing_data = conn.read(worksheet="GSheet_V0",ttl=5)
+#conn = st.experimental_connection("gsheets", type=GSheetsConnection)
+#existing_data = conn.read(worksheet="GSheet_V0",ttl=5)
 
-conn.update(worksheet="GSheet_V0",data=df0)
+#conn.update(worksheet="GSheet_V0",data=df0)
 
 
 
