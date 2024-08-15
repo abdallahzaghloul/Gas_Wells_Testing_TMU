@@ -3,6 +3,8 @@ warnings.filterwarnings("ignore", message="numpy.dtype size changed")
 warnings.filterwarnings("ignore", message="numpy.ufunc size changed")
 from PIL import Image
 import streamlit as st
+from streamlit_gsheets import GSheetsConnection
+
 import numpy as np
 import pandas as pd #2
 import datetime
@@ -82,7 +84,6 @@ st.write("SAL KPPM  = ",Sal)
 
 st.button('Save')
  
-from streamlit_gsheets import GSheetsConnection
 
 st.title("Read Google Sheet as DataFrame")
 
