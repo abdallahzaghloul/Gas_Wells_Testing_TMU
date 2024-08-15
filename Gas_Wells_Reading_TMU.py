@@ -1,7 +1,6 @@
 import warnings
 warnings.filterwarnings("ignore", message="numpy.dtype size changed")
 warnings.filterwarnings("ignore", message="numpy.ufunc size changed")
-import numpy
 from PIL import Image
 import streamlit as st
 import json
