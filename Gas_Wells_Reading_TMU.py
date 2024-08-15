@@ -98,11 +98,7 @@ st.write("SAL KPPM  = ",Sal)
 
 
 if st.button('Save'):
- pd.set_option('mode.chained_assignment',None)
- df2 = pd.read_excel(url,'Sheet1')
- st.write(df2)
-
-
+ 
 from streamlit_gsheets import GSheetsConnection
 
 st.title("Read Google Sheet as DataFrame")
