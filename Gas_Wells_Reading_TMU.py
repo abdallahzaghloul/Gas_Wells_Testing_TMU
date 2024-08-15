@@ -3,24 +3,6 @@ warnings.filterwarnings("ignore", message="numpy.dtype size changed")
 warnings.filterwarnings("ignore", message="numpy.ufunc size changed")
 from PIL import Image
 import streamlit as st
-import json
-import requests
-
-#from streamlit_gsheets import GSheetsConnection
-#conn = st.connection("gsheets", type=GSheetsConnection)
-import os
-
-
-
-
-
-
-
-
-url=("https://github.com/abdallahzaghloul/Gas_Wells_Testing_TMU/blob/main/Gas_Wells_Reading.xlsx?raw=true")
-
-response =requests.get(url) 
-
 import pandas as pd #2
 import datetime
 im = Image.open("KPC.png")
