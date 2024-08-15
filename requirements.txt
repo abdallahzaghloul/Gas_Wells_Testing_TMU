@@ -1,5 +1,5 @@
 
-pandasql
+pandas==1.5.3 
 streamlit>=1.22.0
 st-gsheets-connection
 numpy==1.26.4
