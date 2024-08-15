@@ -22,7 +22,6 @@ url=("https://github.com/abdallahzaghloul/Gas_Wells_Testing_TMU/blob/main/Gas_We
 
 response =requests.get(url) 
 
-import numpy as np #1
 import pandas as pd #2
 import datetime
 im = Image.open("KPC.png")
