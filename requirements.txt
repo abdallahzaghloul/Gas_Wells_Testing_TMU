@@ -3,3 +3,6 @@ pandas==1.5.3
 streamlit>=1.22.0
 st-gsheets-connection
 numpy
+greenlet==3.0.3
+pandasql==0.7.3
+sqlalchemy==2.0.32
