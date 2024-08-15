@@ -11,18 +11,6 @@ import os
 
 
 
-if st.button("Notes"):
-        notes = "Notes:- "
-        with st.sidebar:
-            st.title("Notes")
-            st.text_area("Text", notes, height=300)
-            st.download_button(
-                label="Download Notes",
-                data=notes,
-                file_name="my_notes.txt")
-
-
-
 
 
 
@@ -113,7 +101,15 @@ if st.button('Save'):
  st.write(df2)
 
 
+import streamlit as st
+from streamlit_gsheets import GSheetsConnection
 
+st.title("Read Google Sheet as DataFrame")
+
+conn = st.experimental_connection("gsheets", type=GSheetsConnection)
+existing_data = conn.read(worksheet="GSheet_V0",ttl=5)
+
+conn.update(worksheet="GSheet_V0",data=df0)
 
 
 
