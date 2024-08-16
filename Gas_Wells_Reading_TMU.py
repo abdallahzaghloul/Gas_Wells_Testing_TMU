@@ -87,7 +87,7 @@ if st.button('Save'):
  conn = st.experimental_connection("gsheets", type=GSheetsConnection)
             
  conn.create(worksheet=worksheet)
- conn.update(worksheet=worksheet,dataframe=df1)
+ conn.update(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw"worksheet=worksheet,data=df1)
  
 try:
  st.write(conn.read(worksheet=Well_ID+"_"+"1"))  
