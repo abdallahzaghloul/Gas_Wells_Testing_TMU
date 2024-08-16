@@ -89,6 +89,7 @@ with col2:
  if st.button('Update Old Reading'):
   conn = st.experimental_connection("gsheets", type=GSheetsConnection)
   conn.update(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet=worksheet,data=df1)
+  conn.update(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet=spreadsheet,data=df1)
 
 
 with col1:
@@ -96,10 +97,16 @@ with col1:
  
  
   conn = st.experimental_connection("gsheets", type=GSheetsConnection)
-  conn.create(worksheet=worksheet)
-  conn.create(worksheet=sparesheet)           
-  conn.update(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet=worksheet,data=df1)
-
+  try:           
+   conn.create(worksheet=worksheet)
+   conn.create(worksheet=sparesheet)           
+  except:
+   st.markdown(" <center>  <h1> Please, Update Reading Registeration Time OR Reading Number UP </h1> </font> </center> </h1> ",
+            unsafe_allow_html=True)
+            
+  else:
+   conn.update(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet=worksheet,data=df1)
+  
 
  
 
