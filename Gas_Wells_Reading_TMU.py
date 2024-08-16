@@ -85,11 +85,9 @@ if st.button('Save'):
  
  st.title("Read Google Sheet as DataFrame")
  conn = st.experimental_connection("gsheets", type=GSheetsConnection)
- #existing_data = conn.read(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",ttl=10)
- #st.write(existing_data)
             
  conn.create(worksheet=worksheet)
- #conn.update(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",data=df1)
+ conn.update(worksheet=worksheet,df1)
  
 try:
  st.write(conn.read(worksheet=Well_ID+"_"+"1"))  
