@@ -92,7 +92,7 @@ existing_data = conn.read(spreadsheet="https://docs.google.com/spreadsheets/d/1Z
 st.write(existing_data)
 #existing_data = conn.read(worksheet="gsheets",ttl=10)
 
-conn.update(worksheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",data=df1)
+conn.update(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",data=df1)
 
 
 
