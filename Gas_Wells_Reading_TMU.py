@@ -90,7 +90,8 @@ if st.button('Save'):
  conn.update(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet=worksheet,data=df1)
  
 try:
- st.write(conn.read(worksheet=Well_ID+"_"+"1"))  
+ for i in range (1,48):           
+  st.write(conn.read(worksheet=Well_ID+"_"+str(i))  
 except:
   st.write("An exception occurred")
 
