@@ -109,8 +109,8 @@ with col1:
    conn.update(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet=sparesheet,data=df1)
    
 
+conn.update(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet="Sheet1",data=Reading_No) 
  
-
 #for i in range (1,48):           
 #   try:
 #    st.write(conn.read(worksheet=Well_ID+"_"+str(i)) )            
