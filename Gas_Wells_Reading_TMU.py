@@ -18,7 +18,7 @@ Well_Name = st.selectbox('The Well Name for current Testing',('BARAKAT-D01X','BA
 from datetime import time
 
 Reading_Registeration = st.slider("Reading Registeration:", value=(time(11, 30)))
-Reading_No = st.slider("Reading Number:",1,24,key="Reading_No" ,value=5)
+Reading_No = st.slider("Reading Number:",1,48,key="Reading_No" ,value=5)
 Date=datetime.date.today()
 Date=Date.strftime('%d-%m-%Y')
 #st.write(Date)
