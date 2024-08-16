@@ -78,7 +78,7 @@ st.write("CO2 %  = ",CO2)
 st.write("H2S PPM  = ",H2S)
 st.write("SAL KPPM  = ",Sal)
 
-
+worksheet=Well_ID+_+5
 
 if st.button('Save'):
  
@@ -86,8 +86,9 @@ if st.button('Save'):
  conn = st.experimental_connection("gsheets", type=GSheetsConnection)
  #existing_data = conn.read(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",ttl=10)
  #st.write(existing_data)
- conn.update(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",data=df1)
- conn.create(worksheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw")
+            
+ conn.create(worksheet=worksheet)
+ #conn.update(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",data=df1)
 
 
 
