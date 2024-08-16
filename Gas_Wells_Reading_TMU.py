@@ -18,6 +18,7 @@ Well_Name = st.selectbox('The Well Name for current Testing',('BARAKAT-D01X','BA
 from datetime import time
 
 Reading_Registeration = st.slider("Reading Registeration:", value=(time(11, 30)))
+Reading_No = st.slider("Reading Number:", value=5)
 Date=datetime.date.today()
 Date=Date.strftime('%d-%m-%Y')
 #st.write(Date)
@@ -78,7 +79,7 @@ st.write("CO2 %  = ",CO2)
 st.write("H2S PPM  = ",H2S)
 st.write("SAL KPPM  = ",Sal)
 
-worksheet=Well_ID+_+5
+worksheet=Well_ID+"_"+Reading_No
 
 if st.button('Save'):
  
