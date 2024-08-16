@@ -57,10 +57,9 @@ Sal = st.slider("Salinity KPPM", 0.00,300.00,value=281.00,key="Sal",step=0.2)
 Well_ID = Well_Name + "_" +Date
 
 
-Data = {'Reading_No.': Reading_No,'Well_Name': Well_Name,'Well_ID':Well_ID,'Registeration_Time':Registeration_Time,'Date':Date,'C.K%': CK,'WHP': WHP,'SEP_Pressure': SEP_Pressure,'SEP_Temperature': SEP_Temperature,'FLP': FLP,'FLT': FLT,'Gas_Rate': Gas_Rate,'Condensate': Condensate,'Water': Water,'GOR': GOR,'API': API,'BS&W': BSW}
+Data = {'Reading_No': Reading_No,'Well_Name': Well_Name,'Well_ID':Well_ID,'Registeration_Time':Registeration_Time,'Date':Date,'C.K%': CK,'WHP': WHP,'SEP_Pressure': SEP_Pressure,'SEP_Temperature': SEP_Temperature,'FLP': FLP,'FLT': FLT,'Gas_Rate': Gas_Rate,'Condensate': Condensate,'Water': Water,'GOR': GOR,'API': API,'BS&W': BSW}
 df0=pd.DataFrame([Data])
 df1=pd.DataFrame([Data])
-
 df1["Date"]=pd.to_datetime(df1["Date"])
 df1["Date"]=df1.Date.dt.strftime('%d-%m-%Y')
 df1["C.K%"]=df1["C.K%"].astype("str")+ "%"
@@ -97,6 +96,8 @@ with col1:
  
  
   conn = st.experimental_connection("gsheets", type=GSheetsConnection)
+  conn.update(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet="Sheet1",data=df1["Reading_No"]
+)           
   try:           
    conn.create(worksheet=worksheet)
    conn.create(worksheet=sparesheet)           
@@ -109,7 +110,7 @@ with col1:
    conn.update(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet=sparesheet,data=df1)
    
 
-conn.update(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet="Sheet1",data=Reading_No) 
+ 
  
 #for i in range (1,48):           
 #   try:
