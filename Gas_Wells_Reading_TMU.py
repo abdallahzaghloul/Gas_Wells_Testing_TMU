@@ -83,6 +83,13 @@ Reading_No=str(Reading_No)
 worksheet=Well_ID+"_"+Reading_No
 
 col1, col2, col3 = st.columns(3)
+
+with col2:
+ if st.button('Update Old Reading'):
+  conn = st.experimental_connection("gsheets", type=GSheetsConnection)
+  conn.update(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet=worksheet,data=df1)
+
+
 with col1:
  if st.button('Save New Reading'):
  
@@ -92,12 +99,6 @@ with col1:
   conn.update(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet=worksheet,data=df1)
 
 
-with col2:
- if st.button('Update Old Reading'):
- 
- 
-  conn = st.experimental_connection("gsheets", type=GSheetsConnection)
-  conn.update(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet=worksheet,data=df1)
  
 
 for i in range (1,48):           
