@@ -103,10 +103,10 @@ with col1:
 
  
 
-for i in range (1,48):           
-   try:
-    st.write(conn.read(worksheet=Well_ID+"_"+str(i)) )            
-   except:
-    pass        
+#for i in range (1,48):           
+#   try:
+#    st.write(conn.read(worksheet=Well_ID+"_"+str(i)) )            
+#   except:
+#    pass        
   
 
