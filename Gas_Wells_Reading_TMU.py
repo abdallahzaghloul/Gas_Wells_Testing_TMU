@@ -78,8 +78,8 @@ st.dataframe(df1,width=1200)
 st.write("CO2 %  = ",CO2)
 st.write("H2S PPM  = ",H2S)
 st.write("SAL KPPM  = ",Sal)
-
-worksheet=Well_ID+"_"+Reading_No.astype("str")
+Reading_No=str(Reading_No)
+worksheet=Well_ID+"_"+Reading_No
 
 if st.button('Save'):
  
