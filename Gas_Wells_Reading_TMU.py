@@ -89,7 +89,7 @@ if st.button('Save'):
  #st.write(existing_data)
             
  conn.create(worksheet=worksheet)
- conn.clear(worksheet=Well_ID+"_"+"5")
+ conn.clear(worksheet=Well_ID+"_"+str(5))
  #conn.update(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",data=df1)
 
 
