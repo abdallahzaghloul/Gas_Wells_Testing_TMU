@@ -57,7 +57,7 @@ Sal = st.slider("Salinity KPPM", 0.00,300.00,value=281.00,key="Sal",step=0.2)
 Well_ID = Well_Name + "_" +Date
 
 
-Data = {'Well_Name': Well_Name,'Well_ID':Well_ID,'Reading_Registeration':Reading_Registeration,'Date':Date,'C.K%': CK,'WHP': WHP,'SEP_Pressure': SEP_Pressure,'SEP_Temperature': SEP_Temperature,'FLP': FLP,'FLT': FLT,'Gas_Rate': Gas_Rate,'Condensate': Condensate,'Water': Water,'GOR': GOR,'API': API,'BS&W': BSW}
+Data = {'Reading_No.': Reading_No,'Well_Name': Well_Name,'Well_ID':Well_ID,'Reading_Registeration':Reading_Registeration,'Date':Date,'C.K%': CK,'WHP': WHP,'SEP_Pressure': SEP_Pressure,'SEP_Temperature': SEP_Temperature,'FLP': FLP,'FLT': FLT,'Gas_Rate': Gas_Rate,'Condensate': Condensate,'Water': Water,'GOR': GOR,'API': API,'BS&W': BSW}
 df0=pd.DataFrame([Data])
 df1=pd.DataFrame([Data])
 
