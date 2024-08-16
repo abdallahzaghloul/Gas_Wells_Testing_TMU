@@ -88,7 +88,7 @@ st.title("Read Google Sheet as DataFrame")
 
 conn = st.experimental_connection("gsheets", type=GSheetsConnection)
 
-existing_data = conn.read(spreadsheet="",ttl=10)
+existing_data = conn.read(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",ttl=10)
 #existing_data = conn.read(worksheet="gsheets",ttl=10)
 
 conn.update(worksheet="GSheet_V0",data=df1)
