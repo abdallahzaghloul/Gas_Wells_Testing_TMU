@@ -83,7 +83,7 @@ Reading_No=str(Reading_No)
 worksheet=Well_ID+"_"+Reading_No
 
 col1, col2, col3 = st.columns(3)
-with col:
+with col1:
  if st.button('Save New Reading'):
  
  
