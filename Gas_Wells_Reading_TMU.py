@@ -1,8 +1,6 @@
 from PIL import Image
 import numpy as np
 import pandas as pd #2
-import gspread
-from oauth2client.service_account import ServiceAccountCredentials
 import streamlit as st
 from streamlit_gsheets import GSheetsConnection
 
