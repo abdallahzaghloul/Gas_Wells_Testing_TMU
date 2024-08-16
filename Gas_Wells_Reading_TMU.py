@@ -88,7 +88,7 @@ if st.button('Save New Reading'):
  conn = st.experimental_connection("gsheets", type=GSheetsConnection)
  try:           
    conn.create(worksheet=worksheet)
-  except:
+ except:
    st.markdown(" <right>  <h1> Please Update Reading No. OR Reading Time </h1> </font> </right> </h1> ",
             unsafe_allow_html=True)
            
