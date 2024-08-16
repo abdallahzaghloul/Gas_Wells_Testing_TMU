@@ -18,7 +18,8 @@ Well_Name = st.selectbox('The Well Name for current Testing',('BARAKAT-D01X','BA
 from datetime import time
 
 Reading_Registeration = st.slider("Reading Registeration:", value=(time(11, 30)))
-Reading_No = st.slider("Reading Number:",1,48,key="Reading_No" ,value=5)
+Reading_No = st.number_input("Reading Number:",1,48,key="Reading_No" ,value=5)
+
 Date=datetime.date.today()
 Date=Date.strftime('%d-%m-%Y')
 #st.write(Date)
@@ -81,12 +82,16 @@ st.write("SAL KPPM  = ",Sal)
 Reading_No=str(Reading_No)
 worksheet=Well_ID+"_"+Reading_No
 
-if st.button('Save'):
+if st.button('Save New Reading'):
  
- st.title("Read Google Sheet as DataFrame")
+ st.title("Your Readings have been saved successfully")
  conn = st.experimental_connection("gsheets", type=GSheetsConnection)
-            
- conn.create(worksheet=worksheet)
+ try:           
+   conn.create(worksheet=worksheet)
+  except:
+   st.markdown(" <right>  <h1> Please Update Reading No. OR Reading Time </h1> </font> </right> </h1> ",
+            unsafe_allow_html=True)
+           
  conn.update(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet=worksheet,data=df1)
  for i in range (1,48):           
   try:
