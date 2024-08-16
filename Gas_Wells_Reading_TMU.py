@@ -89,16 +89,16 @@ if st.button('Save New Reading'):
  try:
    st.title("Your Readings have been saved successfully")          
    conn.create(worksheet=worksheet)
- except:
-   st.markdown(" <right>  <h1> Please Update Reading No. OR Reading Time </h1> </font> </right> </h1> ",unsafe_allow_html=True)
+   conn.update(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet=worksheet,data=df1)
  for i in range (1,48):           
   try:
    st.write(conn.read(worksheet=Well_ID+"_"+str(i)) )            
   except:
    pass        
- conn.update(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet=worksheet,data=df1)
+           
+ except:
+   st.markdown(" <right>  <h1> Please Update Reading No. OR Reading Time </h1> </font> </right> </h1> ",unsafe_allow_html=True)
  
-
 
 
 
