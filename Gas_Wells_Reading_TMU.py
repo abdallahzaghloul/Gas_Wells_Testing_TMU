@@ -92,7 +92,7 @@ if st.button('Save'):
   try:
    st.write(conn.read(worksheet=Well_ID+"_"+str(i)) )            
   except:
-   st.write("An exception occurred")
+   pass
 
 
 
