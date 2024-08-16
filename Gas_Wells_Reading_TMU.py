@@ -81,7 +81,7 @@ st.write("H2S PPM  = ",H2S)
 st.write("SAL KPPM  = ",Sal)
 Reading_No=str(Reading_No)
 worksheet=Well_ID+"_"+Reading_No
-sparesheet= Well_ID+"_"+Reading_Registeration
+sparesheet= Well_ID+"_"+Registeration_Time
 
 col1, col2, col3 = st.columns(3)
 
