@@ -106,7 +106,7 @@ with col1:
   else:
    st.markdown(" <right> <h1> Successfully Registered </h1> </font> </right> </h1> ",unsafe_allow_html=True)           
    conn.update(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet=worksheet,data=df1)
-   conn.update(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet=spreadsheet,data=df1)
+   conn.update(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet=sparesheet,data=df1)
    
 
  
