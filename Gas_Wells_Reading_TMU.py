@@ -104,7 +104,7 @@ with col1:
    st.markdown(" <left>  <h1> Please, Update Reading Registeration Time OR Reading Number UP </h1> </font> </left> </h1> ",unsafe_allow_html=True)
             
   else:
-   st.markdown(" <center>  <h1> Successful Registeration </h1> </font> </center> </h1> ",unsafe_allow_html=True)           
+   st.markdown(" <right> <h1> Successful Registeration </h1> </font> </right> </h1> ",unsafe_allow_html=True)           
    conn.update(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet=worksheet,data=df1)
    
 
