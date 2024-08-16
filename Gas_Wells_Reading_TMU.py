@@ -86,7 +86,7 @@ if st.button('Save'):
  st.title("Read Google Sheet as DataFrame")
  conn = st.experimental_connection("gsheets", type=GSheetsConnection)
             
-# conn.create(worksheet=worksheet)
+ conn.create(worksheet=worksheet)
  conn.update(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet=worksheet,data=df1)
  
 try:
