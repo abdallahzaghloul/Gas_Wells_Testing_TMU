@@ -79,7 +79,7 @@ st.write("CO2 %  = ",CO2)
 st.write("H2S PPM  = ",H2S)
 st.write("SAL KPPM  = ",Sal)
 
-worksheet=Well_ID+"_"+Reading_No
+worksheet=Well_ID+"_"+Reading_No.astype("str")
 
 if st.button('Save'):
  
