@@ -86,8 +86,7 @@ if st.button('Save New Reading'):
  
  
  conn = st.experimental_connection("gsheets", type=GSheetsConnection)
- try:
-   st.title("Your Readings have been saved successfully")          
+ try:        
    conn.create(worksheet=worksheet)
    conn.update(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet=worksheet,data=df1)
            
