@@ -86,12 +86,9 @@ if st.button('Save New Reading'):
  
  
  conn = st.experimental_connection("gsheets", type=GSheetsConnection)
- try:        
-   conn.create(worksheet=worksheet)
-   conn.update(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet=worksheet,data=df1)
+ conn.create(worksheet=worksheet)
+ conn.update(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet=worksheet,data=df1)
            
- except:
-   st.markdown(" <right>  <h1> Please Update Reading No. OR Reading Time </h1> </font> </right> </h1> ",unsafe_allow_html=True)
  
 
 for i in range (1,48):           
