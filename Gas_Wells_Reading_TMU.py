@@ -82,13 +82,16 @@ st.write("SAL KPPM  = ",Sal)
 Reading_No=str(Reading_No)
 worksheet=Well_ID+"_"+Reading_No
 
-if st.button('Save New Reading'):
+col1, col2, col3 = st.columns(3)
+with col:
+ if st.button('Save New Reading'):
  
  
- conn = st.experimental_connection("gsheets", type=GSheetsConnection)
- conn.create(worksheet=worksheet)
- conn.update(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet=worksheet,data=df1)
-           
+  conn = st.experimental_connection("gsheets", type=GSheetsConnection)
+  conn.create(worksheet=worksheet)
+  conn.update(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet=worksheet,data=df1)
+
+
  
 
 for i in range (1,48):           
