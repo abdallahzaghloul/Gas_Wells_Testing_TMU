@@ -90,8 +90,11 @@ if st.button('Save'):
             
  conn.create(worksheet=worksheet)
  #conn.update(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",data=df1)
-
-
+ 
+try:
+ st.write(conn.read(worksheet=Well_ID+"_"+"1"))  
+except:
+  st.write("An exception occurred")
 
 
 
