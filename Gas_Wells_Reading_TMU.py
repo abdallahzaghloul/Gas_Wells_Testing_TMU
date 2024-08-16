@@ -84,9 +84,10 @@ worksheet=Well_ID+"_"+Reading_No
 
 if st.button('Save New Reading'):
  
- st.title("Your Readings have been saved successfully")
+ 
  conn = st.experimental_connection("gsheets", type=GSheetsConnection)
- try:           
+ try:
+   st.title("Your Readings have been saved successfully")          
    conn.create(worksheet=worksheet)
  except:
    st.markdown(" <right>  <h1> Please Update Reading No. OR Reading Time </h1> </font> </right> </h1> ",
