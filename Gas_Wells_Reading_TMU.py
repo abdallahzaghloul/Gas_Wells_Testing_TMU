@@ -17,7 +17,7 @@ Well_Name = st.selectbox('The Well Name for current Testing',('BARAKAT-D01X','BA
 
 from datetime import time
 
-Reading_Registeration = st.slider("Reading Registeration:", value=(time(11, 30)))
+Registeration_Time = st.slider("Reading Registeration Time:", value=(time(11, 30)))
 Reading_No = st.number_input("Reading Number:",1,48,key="Reading_No" ,value=5)
 
 Date=datetime.date.today()
@@ -57,7 +57,7 @@ Sal = st.slider("Salinity KPPM", 0.00,300.00,value=281.00,key="Sal",step=0.2)
 Well_ID = Well_Name + "_" +Date
 
 
-Data = {'Reading_No.': Reading_No,'Well_Name': Well_Name,'Well_ID':Well_ID,'Reading_Registeration':Reading_Registeration,'Date':Date,'C.K%': CK,'WHP': WHP,'SEP_Pressure': SEP_Pressure,'SEP_Temperature': SEP_Temperature,'FLP': FLP,'FLT': FLT,'Gas_Rate': Gas_Rate,'Condensate': Condensate,'Water': Water,'GOR': GOR,'API': API,'BS&W': BSW}
+Data = {'Reading_No.': Reading_No,'Well_Name': Well_Name,'Well_ID':Well_ID,'Registeration_Time':Registeration_Time,'Date':Date,'C.K%': CK,'WHP': WHP,'SEP_Pressure': SEP_Pressure,'SEP_Temperature': SEP_Temperature,'FLP': FLP,'FLT': FLT,'Gas_Rate': Gas_Rate,'Condensate': Condensate,'Water': Water,'GOR': GOR,'API': API,'BS&W': BSW}
 df0=pd.DataFrame([Data])
 df1=pd.DataFrame([Data])
 
@@ -81,6 +81,7 @@ st.write("H2S PPM  = ",H2S)
 st.write("SAL KPPM  = ",Sal)
 Reading_No=str(Reading_No)
 worksheet=Well_ID+"_"+Reading_No
+#sparesheet= Well_ID+"_"+Reading_Registeration
 
 col1, col2, col3 = st.columns(3)
 
