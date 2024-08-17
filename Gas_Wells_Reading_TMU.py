@@ -123,3 +123,4 @@ conn = st.experimental_connection("gsheets", type=GSheetsConnection)
 Last_Reading = conn.read(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet="Sheet1")
 n=Last_Reading['Reading_No'].loc[0]
 st.write(n)
+st.write(Last_Reading)
