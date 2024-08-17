@@ -120,5 +120,5 @@ with col1:
 
 #  conn.update(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet=sparesheet,data=df1)
 Last_Reading = conn.read(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet="Sheet1",data=df1["Reading_No"])
-n=dfn['Reading_No'].loc[0]
+n=Last_Reading['Reading_No'].loc[0]
 st.write(n)
