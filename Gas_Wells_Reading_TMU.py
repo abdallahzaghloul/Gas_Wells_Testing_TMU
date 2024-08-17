@@ -106,11 +106,7 @@ with col1:
    st.markdown(" <right> <h1> Sucess Register </h1> </font> </right> </h1> ",unsafe_allow_html=True)           
    conn.update(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet=worksheet,data=df1)
    conn.update(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet=sparesheet,data=df1)
-   Last_Reading = conn.read(worksheet="Sheet1")
-   n=Last_Reading['Reading_No'].loc[0]
-   st.write(n)
-   st.write(Last_Reading)
-
+   
 
  
  
