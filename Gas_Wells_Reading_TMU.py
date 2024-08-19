@@ -43,6 +43,7 @@ Water = st.text_input("Water (BPD)",key="Water")
 GOR = st.text_input("Gas Oil Ratio",key="GOR")
 
 
+
 API = st.slider("API Degree", 0.00,60.00,value=32.00,key="API",step=1.00)
 BSW = st.slider("BS & W %", 0.00,100.00,value=20.00,key="BSW",step=0.1)
 
@@ -54,10 +55,12 @@ CO2 = st.slider("CO2 %", 0.00,100.00,value=12.00,key="CO2",step=0.1)
 H2S = st.slider("H2S PPM", 0.00,50.00,value=8.00,key="H2S",step=0.1)
 Sal = st.slider("Salinity KPPM", 0.00,300.00,value=281.00,key="Sal",step=0.2)
 
+Remarks = st.text_input("Remarks",key="Remarks")
+
 Well_ID = Well_Name + "_" +Date
 
 
-Data = {'Reading_No': Reading_No,'Well_Name': Well_Name,'Well_ID':Well_ID,'Registeration_Time':Registeration_Time,'Date':Date,'C.K%': CK,'WHP': WHP,'SEP_Pressure': SEP_Pressure,'SEP_Temperature': SEP_Temperature,'FLP': FLP,'FLT': FLT,'Gas_Rate': Gas_Rate,'Condensate': Condensate,'Water': Water,'GOR': GOR,'API': API,'BS&W': BSW,'CO2 %':CO2,'H2S':H2S,'SAL':Sal}
+Data = {'Reading_No': Reading_No,'Well_Name': Well_Name,'Well_ID':Well_ID,'Registeration_Time':Registeration_Time,'Date':Date,'C.K%': CK,'WHP': WHP,'SEP_Pressure': SEP_Pressure,'SEP_Temperature': SEP_Temperature,'FLP': FLP,'FLT': FLT,'Gas_Rate': Gas_Rate,'Condensate': Condensate,'Water': Water,'GOR': GOR,'API': API,'BS&W': BSW,'CO2 %':CO2,'H2S':H2S,'SAL':Sal,'Remarks':Remarks}
 df0=pd.DataFrame([Data])
 df1=pd.DataFrame([Data])
 df1["Date"]=pd.to_datetime(df1["Date"])
@@ -82,6 +85,7 @@ st.dataframe(df1,width=1200)
 st.write("CO2 %  = ",CO2)
 st.write("H2S PPM  = ",H2S)
 st.write("SAL KPPM  = ",Sal)
+st.write(Remarks)
 Reading_No=str(Reading_No)
 worksheet=Well_ID+"_"+Reading_No
 sparesheet= Well_ID+"_"+str(Registeration_Time)
