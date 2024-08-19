@@ -74,7 +74,7 @@ df1["SEP_Temperature"]=df1["SEP_Temperature"].astype("str")+ " F"
 df1["FLT"]=df1["FLT"].astype("str")+ " F" 
 df1["API"]=df1["API"].astype("str")+ " Deg"
 
-df1["CO2 %"]=df1["CO2"].astype("str")+ "%"
+df1["CO2 %"]=df1["CO2 %"].astype("str")+ "%"
 df1["H2S"]=df1["H2S"].astype("str")+ " PPM"
 df1["SAL"]=df1["SAL"].astype("str")+ " KPPM"
    
