@@ -95,7 +95,7 @@ with col1:
  
  
   conn = st.experimental_connection("gsheets", type=GSheetsConnection)
-  conn.update(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet="Sheet1",data=df1["Reading_No"])           
+             
   try:           
    conn.create(worksheet=worksheet)
    conn.create(worksheet=sparesheet)           
@@ -106,7 +106,7 @@ with col1:
    st.markdown(" <right> <h1> Sucess Register </h1> </font> </right> </h1> ",unsafe_allow_html=True)           
    conn.update(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet=worksheet,data=df1)
    conn.update(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet=sparesheet,data=df1)
-   
+   conn.update(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet="Sheet1",data=df1["Reading_No"])
 
  
  
